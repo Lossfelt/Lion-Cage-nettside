@@ -51,6 +51,17 @@ class I18n {
   }
 
   getTranslation(key) {
+    // If Norwegian is selected, use the HTML content (no translation needed)
+    if (this.currentLanguage === 'no') {
+      return null; // Return null to keep original Norwegian HTML text
+    }
+
+    // For English, check page-level translations first
+    if (window.pageTranslations && window.pageTranslations[key]) {
+      return window.pageTranslations[key];
+    }
+
+    // Fall back to global translations.json
     const keys = key.split('.');
     let translation = this.translations[this.currentLanguage];
 
@@ -58,8 +69,7 @@ class I18n {
       if (translation && translation[k]) {
         translation = translation[k];
       } else {
-        console.warn(`Translation not found for key: ${key}`);
-        return null;
+        return null; // Translation not found, keep original text
       }
     }
 
