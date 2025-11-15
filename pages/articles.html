@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Les våre artikler og publikasjoner">
+  <title>Artikler - Lion Cage</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/lion-cage-logo-no-background.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/nav-footer.css">
+  <link rel="stylesheet" href="/css/articles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 data-i18n="articles.page_title">Artikler</h1>
+        <p>Våre publikasjoner og fagartikler</p>
+      </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="articles-controls">
+          <input
+            type="text"
+            id="article-search"
+            class="search-input"
+            placeholder="Søk etter artikler..."
+            data-i18n-placeholder="articles.search_placeholder"
+          >
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all" data-i18n="articles.filter_all">Alle</button>
+            <button class="filter-btn" data-filter="research">Forskning</button>
+            <button class="filter-btn" data-filter="development">Utvikling</button>
+            <button class="filter-btn" data-filter="innovation">Innovasjon</button>
+          </div>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="articles-grid" id="articles-grid">
+          <!-- Articles will be loaded dynamically -->
+        </div>
+
+        <!-- No results message -->
+        <div id="no-results" class="no-results" style="display: none;">
+          <p>Ingen artikler funnet</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="/js/components.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/articles.js"></script>
+</body>
+</html>

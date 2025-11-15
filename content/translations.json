@@ -1,0 +1,120 @@
+{
+  "no": {
+    "nav": {
+      "home": "Hjem",
+      "about": "Om Oss",
+      "articles": "Artikler",
+      "projects": "Prosjekter",
+      "services": "Tjenester",
+      "contact": "Kontakt",
+      "faq": "FAQ",
+      "partners": "Samarbeidspartnere"
+    },
+    "home": {
+      "hero_title": "Velkommen til Lion Cage Prosjektet",
+      "hero_subtitle": "Sikkerhet gjennom innsyn",
+      "hero_cta": "Kontakt oss",
+      "hero_cta_secondary": "Les mer",
+      "featured_projects_title": "Utvalgte Prosjekter",
+      "latest_articles_title": "Siste Artikler",
+      "services_title": "Våre Tjenester"
+    },
+    "about": {
+      "page_title": "Om Oss",
+      "intro": "Vi er en dedikert gruppe av forskere og utviklere som jobber med innovative prosjekter.",
+      "team_title": "Vårt Team"
+    },
+    "articles": {
+      "page_title": "Artikler",
+      "search_placeholder": "Søk etter artikler...",
+      "filter_all": "Alle",
+      "read_more": "Les mer"
+    },
+    "projects": {
+      "page_title": "Prosjekter",
+      "view_project": "Se prosjekt"
+    },
+    "services": {
+      "page_title": "Våre Tjenester",
+      "coming_soon": "Kommer snart"
+    },
+    "contact": {
+      "page_title": "Ta Kontakt",
+      "form_name": "Navn",
+      "form_email": "E-post",
+      "form_message": "Melding",
+      "form_submit": "Send",
+      "success_message": "Takk for din henvendelse! Vi kommer tilbake til deg så snart som mulig.",
+      "error_message": "Noe gikk galt. Vennligst prøv igjen."
+    },
+    "faq": {
+      "page_title": "Ofte Stilte Spørsmål"
+    },
+    "partners": {
+      "page_title": "Våre Samarbeidspartnere"
+    },
+    "footer": {
+      "copyright": "© 2025 Lion Cage. Alle rettigheter reservert.",
+      "follow_us": "Følg oss"
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "articles": "Articles",
+      "projects": "Projects",
+      "services": "Services",
+      "contact": "Contact",
+      "faq": "FAQ",
+      "partners": "Partners"
+    },
+    "home": {
+      "hero_title": "Welcome to the Lion Cage Project",
+      "hero_subtitle": "Security through transparency",
+      "hero_cta": "Contact Us",
+      "hero_cta_secondary": "Learn More",
+      "featured_projects_title": "Featured Projects",
+      "latest_articles_title": "Latest Articles",
+      "services_title": "Our Services"
+    },
+    "about": {
+      "page_title": "About Us",
+      "intro": "We are a dedicated group of researchers and developers working on innovative projects.",
+      "team_title": "Our Team"
+    },
+    "articles": {
+      "page_title": "Articles",
+      "search_placeholder": "Search for articles...",
+      "filter_all": "All",
+      "read_more": "Read more"
+    },
+    "projects": {
+      "page_title": "Projects",
+      "view_project": "View project"
+    },
+    "services": {
+      "page_title": "Our Services",
+      "coming_soon": "Coming soon"
+    },
+    "contact": {
+      "page_title": "Get in Touch",
+      "form_name": "Name",
+      "form_email": "Email",
+      "form_message": "Message",
+      "form_submit": "Send",
+      "success_message": "Thank you for your message! We will get back to you as soon as possible.",
+      "error_message": "Something went wrong. Please try again."
+    },
+    "faq": {
+      "page_title": "Frequently Asked Questions"
+    },
+    "partners": {
+      "page_title": "Our Partners"
+    },
+    "footer": {
+      "copyright": "© 2025 Lion Cage. All rights reserved.",
+      "follow_us": "Follow us"
+    }
+  }
+}

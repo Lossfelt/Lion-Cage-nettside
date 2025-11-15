@@ -1,0 +1,167 @@
+/* Contact page styles */
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+}
+
+.contact-form-section h2,
+.contact-info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.contact-form-section p {
+  color: var(--gray-800);
+  margin-bottom: 2rem;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--gray-200);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Messages */
+.message {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.success-message {
+  background-color: #dcfce7;
+  border: 2px solid #16a34a;
+}
+
+.success-message h3 {
+  color: #166534;
+  margin-bottom: 0.5rem;
+}
+
+.success-message p {
+  color: #166534;
+  margin: 0;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  border: 2px solid #dc2626;
+}
+
+.error-message h3 {
+  color: #991b1b;
+  margin-bottom: 0.5rem;
+}
+
+.error-message p {
+  color: #991b1b;
+  margin: 0;
+}
+
+/* Contact Info Cards */
+.info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
+.info-card p {
+  color: var(--gray-800);
+  margin-bottom: 0.25rem;
+}
+
+.info-note {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Social Section */
+.social-section {
+  margin-top: 2rem;
+}
+
+.social-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.social-section .social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-section .social-links a {
+  color: var(--text-color);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-section .social-links a:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Responsive styles */
+@media (max-width: 968px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-info-section {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-section h2,
+  .contact-info-section h2 {
+    font-size: 1.5rem;
+  }
+}

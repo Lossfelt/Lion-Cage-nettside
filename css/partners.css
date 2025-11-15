@@ -1,0 +1,161 @@
+/* Partners page styles */
+
+.partners-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners-intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.partners-intro p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--gray-800);
+}
+
+/* Partners Grid */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.partner-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.partner-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.partner-logo {
+  margin-bottom: 1.5rem;
+}
+
+.logo-placeholder {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.partner-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.partner-description {
+  color: var(--gray-800);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.benefit-card p {
+  color: var(--gray-800);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Partnership CTA */
+.partnership-cta {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.partnership-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.partnership-cta p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partnership-cta .btn {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.partnership-cta .btn:hover {
+  background-color: var(--gray-100);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .partners-intro h2 {
+    font-size: 1.75rem;
+  }
+
+  .partners-intro p {
+    font-size: 1rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partnership-cta h2 {
+    font-size: 1.75rem;
+  }
+
+  .partnership-cta p {
+    font-size: 1rem;
+  }
+}

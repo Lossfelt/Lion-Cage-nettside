@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ofte stilte spørsmål om Lion Cage">
+  <title>FAQ - Lion Cage</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/lion-cage-logo-no-background.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/nav-footer.css">
+  <link rel="stylesheet" href="/css/faq.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 data-i18n="faq.page_title">Ofte Stilte Spørsmål</h1>
+        <p>Finn svar på de mest vanlige spørsmålene</p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="faq-container">
+          <!-- General Questions -->
+          <div class="faq-category">
+            <h2>Generelt</h2>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Hva er Lion Cage?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Lion Cage er en innovativ prosjektgruppe som kombinerer forskning,
+                  teknologiutvikling og strategisk tenkning. Vi jobber med komplekse
+                  utfordringer og utvikler bærekraftige løsninger for fremtiden.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Hvilke fagområder dekker dere?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Vi jobber tverrfaglig innenfor flere områder, inkludert:
+                </p>
+                <ul>
+                  <li>Maskinlæring og kunstig intelligens</li>
+                  <li>Web- og mobilutvikling</li>
+                  <li>Data science og analyse</li>
+                  <li>Forskningsmetodikk</li>
+                  <li>Innovasjonsstrategi</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Hvor er dere lokalisert?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Vi holder til i Oslo, men jobber med partnere og prosjekter
+                  både nasjonalt og internasjonalt. Mange av våre prosjekter kan
+                  gjennomføres på distanse.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collaboration Questions -->
+          <div class="faq-category">
+            <h2>Samarbeid</h2>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Hvordan kan jeg samarbeide med Lion Cage?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Vi er alltid interessert i spennende samarbeidsprosjekter!
+                  Ta kontakt med oss via kontaktskjemaet vårt eller send en
+                  e-post til kontakt@lioncage.no. Beskriv kort hva du er
+                  interessert i, så setter vi opp et møte.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Hva slags prosjekter tar dere på dere?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Vi er spesielt interessert i prosjekter som:
+                </p>
+                <ul>
+                  <li>Krever tverrfaglig kompetanse</li>
+                  <li>Har et innovativt element</li>
+                  <li>Bidrar til positiv samfunnseffekt</li>
+                  <li>Gir mulighet for læring og vekst</li>
+                </ul>
+                <p>
+                  Størrelsen på prosjektet er mindre viktig enn innholdet og
+                  mulighetene det gir.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Hva koster det å jobbe med dere?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Prising avhenger av prosjektets omfang, kompleksitet og varighet.
+                  Vi tilbyr både time-baserte og prosjektbaserte avtaler.
+                  Kontakt oss for et uforpliktende pristilbud tilpasset ditt
+                  spesifikke behov.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Services Questions -->
+          <div class="faq-category">
+            <h2>Tjenester</h2>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Tilbyr dere opplæring og workshops?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Ja! Vi tilbyr skreddersydde workshops og opplæringsprogrammer
+                  innenfor våre fagområder. Dette kan inkludere teknologi-workshops,
+                  forskningsmetodikk, eller team building-aktiviteter. Kontakt oss
+                  for å diskutere dine behov.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Kan dere hjelpe med forskningspublikasjoner?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Ja, vi bistår med hele forskningsprosessen, fra design og
+                  datainnsamling til analyse og publisering. Vi har erfaring
+                  med vitenskapelig skriving og kan hjelpe med å forberede
+                  artikler for peer-reviewed tidsskrifter.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Jobber dere med startups?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Absolutt! Vi har erfaring med å jobbe med startups i
+                  tidlig fase, både med teknologiutvikling og strategisk
+                  rådgivning. Vi kan også vurdere ulike samarbeidsmodeller
+                  for spennende prosjekter.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Questions -->
+          <div class="faq-category">
+            <h2>Teknisk</h2>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Hvilke teknologier bruker dere?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Vi jobber med et bredt spekter av moderne teknologier,
+                  inkludert men ikke begrenset til:
+                </p>
+                <ul>
+                  <li><strong>Frontend:</strong> React, Vue, Next.js, TypeScript</li>
+                  <li><strong>Backend:</strong> Node.js, Python, PostgreSQL, MongoDB</li>
+                  <li><strong>Cloud:</strong> AWS, Azure, Google Cloud Platform</li>
+                  <li><strong>AI/ML:</strong> TensorFlow, PyTorch, scikit-learn</li>
+                  <li><strong>DevOps:</strong> Docker, Kubernetes, CI/CD pipelines</li>
+                </ul>
+                <p>
+                  Vi velger alltid teknologi basert på prosjektets behov,
+                  ikke omvendt.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" onclick="toggleFAQ(this)">
+                <span>Hvordan håndterer dere datasikkerhet?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Datasikkerhet er en prioritet i alle våre prosjekter. Vi
+                  følger beste praksis for sikkerhet, inkludert kryptering,
+                  sikker autentisering, regelmessige sikkerhetsrevisjoner,
+                  og overholdelse av GDPR og andre relevante regelverk.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="faq-cta">
+          <h2>Fant du ikke svaret du lette etter?</h2>
+          <p>Ikke nøl med å ta kontakt, så hjelper vi deg gjerne!</p>
+          <a href="/pages/contact.html" class="btn btn-primary" data-i18n="home.hero_cta">Kontakt oss</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="/js/components.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/faq.js"></script>
+</body>
+</html>

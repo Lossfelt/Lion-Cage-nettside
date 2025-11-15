@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Se våre prosjekter og case studies">
+  <title>Prosjekter - Lion Cage</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/lion-cage-logo-no-background.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/nav-footer.css">
+  <link rel="stylesheet" href="/css/projects.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 data-i18n="projects.page_title">Prosjekter</h1>
+        <p>Utforsk våre tidligere og pågående prosjekter</p>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="card-image-placeholder"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-status status-completed">Fullført</span>
+                <span class="project-date">2024</span>
+              </div>
+              <h3>Innovativt AI-prosjekt</h3>
+              <p>
+                Et omfattende forskningsprosjekt som utforsket bruk av maskinlæring
+                for å løse komplekse dataanalyseoppgaver.
+              </p>
+              <div class="project-tags">
+                <span class="tag">AI/ML</span>
+                <span class="tag">Forskning</span>
+                <span class="tag">Data Science</span>
+              </div>
+              <div class="project-stats">
+                <div class="stat">
+                  <span class="stat-value">12</span>
+                  <span class="stat-label">Måneder</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">5</span>
+                  <span class="stat-label">Team medlemmer</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">3</span>
+                  <span class="stat-label">Publikasjoner</span>
+                </div>
+              </div>
+              <button class="btn btn-secondary" onclick="toggleProjectDetails('project-1')">
+                Se detaljer
+              </button>
+            </div>
+            <div class="project-details" id="project-1" style="display: none;">
+              <h4>Prosjektbeskrivelse</h4>
+              <p>
+                Dette prosjektet fokuserte på å utvikle nye algoritmer for maskinlæring
+                som kunne håndtere store datamengder mer effektivt enn eksisterende løsninger.
+              </p>
+              <h4>Nøkkelresultater</h4>
+              <ul>
+                <li>Utviklet en ny algoritme med 40% bedre ytelse</li>
+                <li>Publisert 3 vitenskapelige artikler</li>
+                <li>Presentert på 2 internasjonale konferanser</li>
+                <li>Samarbeid med ledende forskningsinstitusjoner</li>
+              </ul>
+              <h4>Teknologier</h4>
+              <p>Python, TensorFlow, PyTorch, scikit-learn, Jupyter Notebooks</p>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="card-image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-status status-ongoing">Pågående</span>
+                <span class="project-date">2024-2025</span>
+              </div>
+              <h3>Grønn teknologi-initiativ</h3>
+              <p>
+                Et tverrfaglig prosjekt som utvikler bærekraftige teknologiske løsninger
+                for å redusere miljøavtrykk i industrien.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Bærekraft</span>
+                <span class="tag">IoT</span>
+                <span class="tag">Optimering</span>
+              </div>
+              <div class="project-stats">
+                <div class="stat">
+                  <span class="stat-value">18</span>
+                  <span class="stat-label">Måneder</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">8</span>
+                  <span class="stat-label">Team medlemmer</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">2</span>
+                  <span class="stat-label">Partnere</span>
+                </div>
+              </div>
+              <button class="btn btn-secondary" onclick="toggleProjectDetails('project-2')">
+                Se detaljer
+              </button>
+            </div>
+            <div class="project-details" id="project-2" style="display: none;">
+              <h4>Prosjektbeskrivelse</h4>
+              <p>
+                Vi jobber med å utvikle sensorer og analyse-systemer som kan monitorere
+                og optimalisere energiforbruk i sanntid.
+              </p>
+              <h4>Pågående arbeid</h4>
+              <ul>
+                <li>Utvikling av IoT-sensorer for energimåling</li>
+                <li>Maskinlæring for prediktiv vedlikehold</li>
+                <li>Dashboard for visualisering og rapportering</li>
+                <li>Pilot-testing hos industri-partnere</li>
+              </ul>
+              <h4>Teknologier</h4>
+              <p>React, Node.js, MongoDB, MQTT, Docker, Kubernetes</p>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <div class="card-image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="project-status status-completed">Fullført</span>
+                <span class="project-date">2023</span>
+              </div>
+              <h3>Moderne web-plattform</h3>
+              <p>
+                Utvikling av en skalerbar og sikker web-plattform for en av våre
+                samarbeidspartnere.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Web Development</span>
+                <span class="tag">Cloud</span>
+                <span class="tag">Security</span>
+              </div>
+              <div class="project-stats">
+                <div class="stat">
+                  <span class="stat-value">8</span>
+                  <span class="stat-label">Måneder</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">6</span>
+                  <span class="stat-label">Team medlemmer</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">10k+</span>
+                  <span class="stat-label">Brukere</span>
+                </div>
+              </div>
+              <button class="btn btn-secondary" onclick="toggleProjectDetails('project-3')">
+                Se detaljer
+              </button>
+            </div>
+            <div class="project-details" id="project-3" style="display: none;">
+              <h4>Prosjektbeskrivelse</h4>
+              <p>
+                En fullstack web-applikasjon med fokus på ytelse, sikkerhet og
+                brukervennlighet.
+              </p>
+              <h4>Nøkkelresultater</h4>
+              <ul>
+                <li>Lansert til 10,000+ aktive brukere</li>
+                <li>99.9% oppetid siden lansering</li>
+                <li>Høy brukertilfredshet (4.8/5 stjerner)</li>
+                <li>Superrask lastetid (< 2 sekunder)</li>
+              </ul>
+              <h4>Teknologier</h4>
+              <p>React, TypeScript, Next.js, PostgreSQL, AWS, Terraform</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Collaboration CTA -->
+    <section class="collaboration-cta">
+      <div class="container">
+        <h2>Har du et prosjekt i tankene?</h2>
+        <p>Vi samarbeider gjerne med partnere om spennende prosjekter</p>
+        <a href="/pages/contact.html" class="btn btn-primary" data-i18n="home.hero_cta">Kontakt oss</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="/js/components.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/projects.js"></script>
+</body>
+</html>
