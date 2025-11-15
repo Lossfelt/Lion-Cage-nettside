@@ -2,15 +2,17 @@
 
 /* Base styles */
 :root {
-  --primary-color: #0ea5e9;
-  --primary-dark: #0284c7;
-  --primary-light: #38bdf8;
+  /* Certisign Color Palette */
+  --primary-color: #553DF2;      /* Certisign-1: Primary purple */
+  --primary-dark: #2B2073;       /* Certisign-2: Dark purple */
+  --primary-light: #7775BF;      /* Certisign-4: Light purple */
+  --accent-color: #0D05F2;       /* Certisign-3: Accent blue-purple */
   --text-color: #1f2937;
   --bg-color: #ffffff;
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
-  --gray-800: #1f2937;
+  --gray-800: #8C8C8C;           /* Certisign-5: Medium gray */
   --gray-900: #111827;
 }
 
