@@ -224,7 +224,7 @@
     right: 0;
     background: white;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-height: 0;
     overflow: hidden;
@@ -232,6 +232,7 @@
   }
 
   .nav-menu.active {
+    padding: 1rem;
     max-height: 500px;
   }
 
