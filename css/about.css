@@ -1,17 +1,5 @@
 /* About page specific styles */
 
-.page-header {
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-  color: white;
-  padding: 4rem 0 3rem;
-  text-align: center;
-}
-
-.page-header h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
 .about-intro {
   max-width: 800px;
   margin: 0 auto;
@@ -161,10 +149,6 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .page-header h1 {
-    font-size: 2rem;
-  }
-
   .about-intro h2 {
     font-size: 1.75rem;
   }

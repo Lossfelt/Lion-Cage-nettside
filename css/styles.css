@@ -116,8 +116,38 @@ body {
   background-clip: text;
 }
 
+/* Page header styles (shared across pages) */
+.page-header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.page-header p {
+  font-size: 1.125rem;
+  opacity: 0.9;
+}
+
 /* Responsive utilities */
 @media (max-width: 768px) {
+  .page-header {
+    padding: 5rem 0 2rem; /* Extra padding-top to prevent navbar overlap */
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
   .section-padding {
     padding: 2rem 0;
   }
