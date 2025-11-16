@@ -34,18 +34,36 @@ class I18n {
     // Translate all elements with data-i18n attribute
     document.querySelectorAll('[data-i18n]').forEach(element => {
       const key = element.getAttribute('data-i18n');
+
+      // Store original Norwegian text on first run
+      if (!element.hasAttribute('data-original-text')) {
+        element.setAttribute('data-original-text', element.textContent);
+      }
+
       const translation = this.getTranslation(key);
       if (translation) {
         element.textContent = translation;
+      } else if (this.currentLanguage === 'no') {
+        // Restore original Norwegian text
+        element.textContent = element.getAttribute('data-original-text');
       }
     });
 
     // Translate all elements with data-i18n-placeholder attribute
     document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
       const key = element.getAttribute('data-i18n-placeholder');
+
+      // Store original Norwegian placeholder on first run
+      if (!element.hasAttribute('data-original-placeholder')) {
+        element.setAttribute('data-original-placeholder', element.placeholder);
+      }
+
       const translation = this.getTranslation(key);
       if (translation) {
         element.placeholder = translation;
+      } else if (this.currentLanguage === 'no') {
+        // Restore original Norwegian placeholder
+        element.placeholder = element.getAttribute('data-original-placeholder');
       }
     });
   }
