@@ -93,7 +93,7 @@ function createFooter() {
       </div>
 
       <div class="footer-bottom">
-        <p data-i18n="footer.copyright">&copy; 2025 Lion Cage. Alle rettigheter reservert.</p>
+        <p data-i18n="footer.copyright">&copy; 2025 Lion Cage prosjektet. Alle rettigheter reservert.</p>
       </div>
     </div>
   `;
