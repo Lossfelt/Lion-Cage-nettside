@@ -4,43 +4,43 @@
 const articlesData = [
   {
     id: 'article-1',
-    title: 'Innovasjon i forskningsprosessen',
-    excerpt: 'En dypere titt på hvordan vi integrerer nye metodikker i vår forskningspraksis.',
-    category: 'research',
+    title: 'Løven på Andøya',
+    excerpt: 'Nylig kjørte vi Løven opp til Andøya for å delta på Jammertest. Her testet vi GPS-jamming og hvordan moderne kjøretøy responderer på signalforstyrrelse.',
+    category: 'security',
     date: '2025-01-15',
-    author: 'Kari Karlsen',
-    file: 'example-article-1.md'
+    author: 'Lion Cage Team',
+    file: 'andoya-jammertest.md'
   },
   {
     id: 'article-2',
-    title: 'Fremtidens utviklingsverktøy',
-    excerpt: 'Utforsking av nye teknologier og verktøy for moderne programvareutvikling.',
-    category: 'development',
+    title: 'Testing av el-busser fra Ruter',
+    excerpt: 'Lion Cage har testet busser brukt i offentlig transport. Vi undersøker datainnsamling, sikkerhet og potensielle sårbarheter i moderne el-busser.',
+    category: 'transport',
     date: '2025-01-10',
-    author: 'Per Persen',
-    file: 'example-article-2.md'
+    author: 'Lion Cage Team',
+    file: 'ruter-bus-testing.md'
   },
   {
     id: 'article-3',
-    title: 'Tverrfaglig samarbeid i praksis',
-    excerpt: 'Hvordan vi kombinerer ulike fagområder for å løse komplekse problemer.',
-    category: 'innovation',
-    date: '2025-01-05',
-    author: 'Navn Navnesen',
-    file: 'example-article-3.md'
+    title: 'Kinesisk elbil - dataflyt utenfor EØS',
+    excerpt: 'Historien om hvordan Lion Cage startet: Tor kjøpte en kinesisk elbil for å undersøke om dataene den samlet ble sendt ut av EØS. Dette arbeidet la grunnlaget for videre forskning.',
+    category: 'privacy',
+    date: '2024-12-20',
+    author: 'Tor & Lion Cage Team',
+    file: 'chinese-ev-privacy.md'
   }
 ];
 
 const categoryTranslations = {
   no: {
-    research: 'Forskning',
-    development: 'Utvikling',
-    innovation: 'Innovasjon'
+    security: 'Sikkerhet',
+    transport: 'Transport',
+    privacy: 'Privacy'
   },
   en: {
-    research: 'Research',
-    development: 'Development',
-    innovation: 'Innovation'
+    security: 'Security',
+    transport: 'Transportation',
+    privacy: 'Privacy'
   }
 };
 
