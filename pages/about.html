@@ -35,14 +35,17 @@
     <section class="section-padding">
       <div class="container">
         <div class="about-intro">
-          <h2>Hvem er vi?</h2>
+          <h2 data-i18n="about.who_title">Hvem er vi?</h2>
           <p data-i18n="about.intro">
-            Vi er en dedikert gruppe av forskere og utviklere som jobber med innovative prosjekter.
+            Lion Cage er en gruppe ildsjeler dedikert til å fremme sikkerhet gjennom åpenhet og transparens,
+            slik at man tar informerte valg om bruk av teknologi.
+            Vi jobber med å avdekke om teknologi og programvare kan brukes i mot eierens interesser.
           </p>
-          <p>
-            Lion Cage ble etablert med en visjon om å bringe sammen ekspertise innenfor forskning,
-            teknologi og innovasjon. Vår gruppe består av erfarne fagpersoner som brenner for å
-            løse komplekse utfordringer og skape meningsfulle løsninger.
+          <p data-i18n="about.history">
+            Lion Cage startet da Tor kjøpte en kinesisk elbil for å undersøke om dataene den samlet i daglig drift ble sendt ut av EØS.
+            I årene som fulgte har gruppen vokst, og vi teller nå 10+ personer med bred ekspertise.
+            Vi har hatt gleden av å se arbeidet bli plukket opp av både media og myndigheter, og har gått fra å sikkerhetsteste
+            en personbil til å teste busser brukt i offentlig transport.
           </p>
         </div>
       </div>
@@ -54,18 +57,16 @@
         <div class="grid grid-2">
           <div class="mission-vision-card">
             <div class="icon">🎯</div>
-            <h3>Vår Misjon</h3>
-            <p>
-              Å drive banebrytende forskning og utvikling som skaper verdi for samfunnet
-              og fremmer innovasjon innenfor våre fagområder.
+            <h3 data-i18n="about.mission_title">Vår Misjon</h3>
+            <p data-i18n="about.mission_text">
+              Å formidle på hvilke måter moderne teknologi kan misbrukes, samt anbefale hva som kan gjøres for å minimere risikoen for at det skjer.
             </p>
           </div>
           <div class="mission-vision-card">
             <div class="icon">🔭</div>
-            <h3>Vår Visjon</h3>
-            <p>
-              Å være en ledende aktør innenfor forskningsbasert innovasjon, og bidra til
-              å forme fremtidens teknologi og løsninger.
+            <h3 data-i18n="about.vision_title">Vår Visjon</h3>
+            <p data-i18n="about.vision_text">
+              Å bidra til at myndigheter og private gjennom kunnskap kan ta informerte valg om anskaffelse og bruk av teknologi.
             </p>
           </div>
         </div>
@@ -151,22 +152,22 @@
     <!-- Values Section -->
     <section class="section-padding bg-gray">
       <div class="container">
-        <h2 class="section-title text-center">Våre Verdier</h2>
+        <h2 class="section-title text-center" data-i18n="about.values_title">Våre Verdier</h2>
         <div class="grid grid-3">
           <div class="value-card">
-            <div class="value-icon">🤝</div>
-            <h3>Samarbeid</h3>
-            <p>Vi tror på kraften i tverrfaglig samarbeid og åpen kommunikasjon.</p>
+            <div class="value-icon">🛡️</div>
+            <h3 data-i18n="about.value1_title">Sikkerhet</h3>
+            <p data-i18n="about.value1_text">Vi prioriterer sikkerheten til brukere og eiere av teknologi, og jobber for å avdekke sårbarheter før de kan utnyttes.</p>
           </div>
           <div class="value-card">
-            <div class="value-icon">💎</div>
-            <h3>Kvalitet</h3>
-            <p>Vi streber etter høyeste kvalitet i alt vi gjør, fra forskning til implementering.</p>
+            <div class="value-icon">👁️</div>
+            <h3 data-i18n="about.value2_title">Åpenhet</h3>
+            <p data-i18n="about.value2_text">Vi deler våre funn åpent og transparens er kjernen i alt vi gjør, slik at andre kan dra nytte av kunnskapen vi avdekker.</p>
           </div>
           <div class="value-card">
-            <div class="value-icon">🌱</div>
-            <h3>Innovasjon</h3>
-            <p>Vi utfordrer status quo og søker kontinuerlig etter nye og bedre løsninger.</p>
+            <div class="value-icon">⚖️</div>
+            <h3 data-i18n="about.value3_title">Integritet</h3>
+            <p data-i18n="about.value3_text">Vi handler ærlig og etisk i alle våre undersøkelser, og står ved våre funn uavhengig av press eller påvirkning.</p>
           </div>
         </div>
       </div>
@@ -180,8 +181,21 @@
   <script>
     window.pageTranslations = {
       "about.page_title": "About Us",
-      "about.intro": "We are a dedicated group of researchers and developers working on innovative projects.",
-      "about.team_title": "Our Team"
+      "about.who_title": "Who are we?",
+      "about.intro": "Lion Cage is a group of enthusiasts dedicated to promoting security through openness and transparency, so that people can make informed choices about technology use. We work to uncover whether technology and software can be used against the owner's interests.",
+      "about.history": "Lion Cage started when Tor bought a Chinese electric car to investigate whether the data it collected during daily operation was sent out of the EEA. In the years that followed, the group has grown, and we now count 10+ people with broad expertise. We have had the pleasure of seeing our work picked up by both media and authorities, and have gone from security testing a passenger car to testing buses used in public transport.",
+      "about.mission_title": "Our Mission",
+      "about.mission_text": "To communicate the ways in which modern technology can be misused, and recommend what can be done to minimize the risk of this happening.",
+      "about.vision_title": "Our Vision",
+      "about.vision_text": "To help authorities and private individuals make informed choices about the acquisition and use of technology through knowledge.",
+      "about.team_title": "Our Team",
+      "about.values_title": "Our Values",
+      "about.value1_title": "Security",
+      "about.value1_text": "We prioritize the security of users and owners of technology, and work to uncover vulnerabilities before they can be exploited.",
+      "about.value2_title": "Transparency",
+      "about.value2_text": "We share our findings openly and transparency is at the core of everything we do, so that others can benefit from the knowledge we uncover.",
+      "about.value3_title": "Integrity",
+      "about.value3_text": "We act honestly and ethically in all our investigations, and stand by our findings regardless of pressure or influence."
     };
   </script>
 
