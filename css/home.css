@@ -75,6 +75,79 @@
   background-color: var(--gray-50);
 }
 
+/* About Preview */
+.about-preview {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.about-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+}
+
+.about-preview p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: var(--gray-800);
+}
+
+/* Content Cards (Latest Article & Project) */
+.content-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content-label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.content-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.content-excerpt {
+  flex-grow: 1;
+  color: var(--gray-800);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.content-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--gray-800);
+}
+
+.status-ongoing {
+  padding: 0.25rem 0.75rem;
+  background-color: #dbeafe;
+  color: #1e40af;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
 /* Project Cards */
 .project-card {
   display: flex;
@@ -245,5 +318,21 @@
 
   .cta-content p {
     font-size: 1rem;
+  }
+
+  .about-preview {
+    padding: 1.5rem;
+  }
+
+  .about-preview h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-preview p {
+    font-size: 1rem;
+  }
+
+  .content-card h3 {
+    font-size: 1.25rem;
   }
 }
