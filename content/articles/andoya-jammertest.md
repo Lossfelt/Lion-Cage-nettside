@@ -32,7 +32,7 @@ Andøya Space ble valgt som testlokasjon på grunn av:
 
 ## Viktige funn
 
-Testene avdekket flere interessante observasjoner:
+Testene avdekket flere interessante observasjoner
 
 - **Plutselig tap av GPS**: De fleste kjøretøy håndterte plutselig GPS-tap dårlig, med lite eller ingen advarsel til sjåføren
 - **Falske posisjonsdata**: Noen systemer forsøkte å "gjette" posisjon basert på tidligere data, noe som kunne føre til feilinformasjon
