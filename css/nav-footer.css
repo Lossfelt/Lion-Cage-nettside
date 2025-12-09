@@ -45,10 +45,15 @@
   transform: scale(1.05);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2rem;
 }
 
 .nav-links {
@@ -249,10 +254,6 @@
 
   .nav-links a.active::after {
     bottom: 0;
-  }
-
-  .language-toggle {
-    width: 100%;
   }
 
   .footer-content {

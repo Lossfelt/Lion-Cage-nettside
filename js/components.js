@@ -14,11 +14,14 @@ function createNavigation() {
         </a>
       </div>
 
-      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-actions">
+        <button class="language-toggle" id="language-toggle">NO</button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
       <div class="nav-menu" id="nav-menu">
         <ul class="nav-links">
@@ -31,7 +34,6 @@ function createNavigation() {
           <li><a href="/pages/partners.html" data-i18n="nav.partners">Samarbeidspartnere</a></li>
           <li><a href="/pages/contact.html" data-i18n="nav.contact">Kontakt</a></li>
         </ul>
-        <button class="language-toggle" id="language-toggle">NO</button>
       </div>
     </div>
   `;
