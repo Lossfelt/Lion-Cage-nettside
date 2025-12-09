@@ -8,4 +8,4 @@
 - [X] Fix bug med hover-farge over folow us
 - [X] Legg in Tor sin linkedin på follow us
 - [ ] Sett opp form-backend
-- [ ] Fjern Ruter som partner enn så lenge
+- [X] Fjern Ruter som partner enn så lenge
