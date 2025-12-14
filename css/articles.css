@@ -29,6 +29,7 @@
 .filter-btn {
   padding: 0.5rem 1.25rem;
   background-color: var(--gray-100);
+  color: var(--text-color);
   border: 2px solid transparent;
   border-radius: 0.5rem;
   font-weight: 600;
@@ -42,7 +43,6 @@
 
 .filter-btn.active {
   background-color: var(--primary-color);
-  color: white;
   border-color: var(--primary-dark);
 }
 
@@ -86,7 +86,7 @@
 
 /* Article viewer styles */
 .article-content {
-  background-color: white;
+  background-color: var(--bg-color);
 }
 
 .article-container {
@@ -238,7 +238,7 @@
 }
 
 .error-message h2 {
-  color: #dc2626;
+  color: var(--accent-color);
   margin-bottom: 1rem;
 }
 

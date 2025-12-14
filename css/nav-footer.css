@@ -1,6 +1,6 @@
 /* Navigation styles */
 .navbar {
-  background: white;
+  background: var(--bg-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -43,6 +43,12 @@
 
 .logo-image:hover {
   transform: scale(1.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-image {
+    filter: brightness(0) invert(1); /* Swap dark logo to light for dark nav */
+  }
 }
 
 .nav-actions {
@@ -91,7 +97,8 @@
 
 .language-toggle {
   padding: 0.5rem 1rem;
-  background: var(--gray-100);
+  background: var(--gray-400);
+  color: var(--text-color);
   border: none;
   border-radius: 0.25rem;
   font-weight: 600;
@@ -100,7 +107,7 @@
 }
 
 .language-toggle:hover {
-  background: var(--gray-200);
+  background: var(--primary-color);
 }
 
 .mobile-menu-toggle {
@@ -137,7 +144,7 @@
 /* Footer styles */
 .footer {
   background: var(--primary-light);
-  color: white;
+  color: var(--text-color);
   padding: 3rem 0 1rem;
   margin-top: 4rem;
 }
@@ -152,7 +159,7 @@
 .footer-section h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(to right, var(--primary-light), white);
+  background: linear-gradient(to right, var(--primary-light), var(--bg-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -161,7 +168,7 @@
 .footer-section h4 {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  color: white;
+  color: var(--text-color);
 }
 
 .footer-section p {
@@ -227,7 +234,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--bg-color);
     flex-direction: column;
     padding: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

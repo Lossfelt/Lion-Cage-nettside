@@ -26,7 +26,7 @@
 }
 
 .partner-card {
-  background: white;
+  background: var(--gray-100);
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -79,7 +79,7 @@
 .benefit-card {
   text-align: center;
   padding: 2rem;
-  background: white;
+  background: var(--gray-100);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -104,7 +104,7 @@
 /* Partnership CTA */
 .partnership-cta {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-  color: white;
+  color: var(--text-color);
   padding: 4rem 0;
   text-align: center;
   margin-top: 2rem;
@@ -125,7 +125,7 @@
 }
 
 .partnership-cta .btn {
-  background-color: white;
+  background-color: var(--bg-color);
   color: var(--primary-color);
 }
 

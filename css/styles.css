@@ -2,18 +2,52 @@
 
 /* Base styles */
 :root {
-  /* Certisign Color Palette */
-  --primary-color: #553DF2;      /* Certisign-1: Primary purple */
-  --primary-dark: #2B2073;       /* Certisign-2: Dark purple */
-  --primary-light: #7775BF;      /* Certisign-4: Light purple */
-  --accent-color: #0D05F2;       /* Certisign-3: Accent blue-purple */
+  /* Certisign Color Palette (inactive, kept for fallback)
+  --primary-color: #553DF2;
+  --primary-dark: #2B2073;
+  --primary-light: #7775BF;
+  --accent-color: #0D05F2;
   --text-color: #1f2937;
   --bg-color: #ffffff;
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
-  --gray-800: #8C8C8C;           /* Certisign-5: Medium gray */
+  --gray-800: #8C8C8C;
   --gray-900: #111827;
+  */
+
+  /* GuardCenter Light Palette (default) */
+  --primary-color: #F27405;      /* Orange for CTA buttons/links */
+  --primary-dark: #b35400;       /* Darker orange for hovers/gradients */
+  --primary-light: #F227AB;      /* Pink highlight for gradients */
+  --accent-color: #0424D9;       /* Blue accent for links/focus */
+  --text-color: #0D0D0D;         /* Body text on light backgrounds */
+  --bg-color: #F2F2F2;           /* Page background */
+  --gray-50: #ffffff;            /* Lightest surfaces */
+  --gray-100: #ededed;           /* Card surfaces and subtle fills */
+  --gray-200: #d9d9d9;           /* Borders/dividers and secondary fills */
+  --gray-400: #b3b3b3;           /* Mid-tone dividers and icons */
+  --gray-800: #2f2f2f;           /* Muted text and icons (still AA on light surfaces) */
+  --gray-900: #0D0D0D;           /* High-contrast text/icons on light */
+}
+
+/* Respect system dark mode preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* GuardCenter Dark Palette */
+    --primary-color: #F27405;      /* Orange for CTA buttons/links */
+    --primary-dark: #0D0D0D;       /* Base background and header/footer */
+    --primary-light: #F227AB;      /* Pink highlight for hovers/gradients */
+    --accent-color: #4652ff;       /* Accent elements and focus states */
+    --text-color: #F2F2F2;         /* Body text on dark backgrounds */
+    --bg-color: #0D0D0D;           /* Page background */
+    --gray-50: #121212;            /* Section/card backgrounds */
+    --gray-100: #1f1f1f;           /* Card surfaces and subtle fills */
+    --gray-200: #262626;           /* Borders/dividers and secondary fills */
+    --gray-400: #3a3a3a;           /* Mid-tone dividers and icons */
+    --gray-800: #c7c7c7;           /* Muted text and icons */
+    --gray-900: #f2f2f2;           /* High-contrast text/icons on dark */
+  }
 }
 
 * {
@@ -59,7 +93,7 @@ body {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--text-color);
 }
 
 .btn-primary:hover {
@@ -79,7 +113,7 @@ body {
 
 /* Card styles */
 .card {
-  background: white;
+  background: var(--gray-100);
   border-radius: 0.5rem;
   padding: 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -119,7 +153,7 @@ body {
 /* Page header styles (shared across pages) */
 .page-header {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-  color: white;
+  color: var(--text-color);
   padding: 4rem 0 3rem;
   text-align: center;
 }

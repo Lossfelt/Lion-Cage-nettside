@@ -51,7 +51,7 @@ function createFooter() {
       <div class="footer-content">
         <div class="footer-section">
           <img src="/images/lion-cage-logo-no-background.png" alt="Lion Cage" class="footer-logo">
-          <p data-i18n="home.hero_subtitle">Sikkerhet gjennom åpenhet</p>
+          <p data-i18n="home.hero_subtitle">Åpenhet, sikkerhetsrisiko, og informerte beslutninger</p>
         </div>
 
         <div class="footer-section">

@@ -60,38 +60,38 @@
 }
 
 .success-message {
-  background-color: #dcfce7;
-  border: 2px solid #16a34a;
+  background-color: var(--gray-100);
+  border: 2px solid var(--primary-color);
 }
 
 .success-message h3 {
-  color: #166534;
+  color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
 .success-message p {
-  color: #166534;
+  color: var(--primary-color);
   margin: 0;
 }
 
 .error-message {
-  background-color: #fee2e2;
-  border: 2px solid #dc2626;
+  background-color: var(--gray-100);
+  border: 2px solid var(--primary-light);
 }
 
 .error-message h3 {
-  color: #991b1b;
+  color: var(--primary-light);
   margin-bottom: 0.5rem;
 }
 
 .error-message p {
-  color: #991b1b;
+  color: var(--primary-light);
   margin: 0;
 }
 
 /* Contact Info Cards */
 .info-card {
-  background: white;
+  background: var(--gray-100);
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

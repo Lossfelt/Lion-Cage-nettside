@@ -7,7 +7,7 @@
 }
 
 .project-card {
-  background: white;
+  background: var(--gray-100);
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -43,18 +43,18 @@
 }
 
 .status-completed {
-  background-color: #dcfce7;
-  color: #166534;
+  background-color: var(--gray-100);
+  color: var(--primary-color);
 }
 
 .status-ongoing {
-  background-color: #dbeafe;
-  color: #1e40af;
+  background-color: var(--gray-100);
+  color: var(--accent-color);
 }
 
 .status-planned {
-  background-color: #fef3c7;
-  color: #92400e;
+  background-color: var(--gray-100);
+  color: var(--primary-light);
 }
 
 .project-date {
@@ -161,7 +161,7 @@
 /* Collaboration CTA */
 .collaboration-cta {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-  color: white;
+  color: var(--text-color);
   padding: 4rem 0;
   text-align: center;
   margin-top: 2rem;
@@ -179,7 +179,7 @@
 }
 
 .collaboration-cta .btn {
-  background-color: white;
+  background-color: var(--bg-color);
   color: var(--primary-color);
 }
 
