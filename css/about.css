@@ -52,7 +52,7 @@
 .team-member {
   text-align: center;
   padding: 1.5rem;
-  background: white;
+  background: var(--gray-100);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.2s ease;
@@ -135,7 +135,7 @@
 .value-card {
   text-align: center;
   padding: 2rem;
-  background: white;
+  background: var(--gray-100);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
