@@ -10,4 +10,5 @@
 - [ ] Sett opp form-backend
 - [X] Fjern Ruter som partner enn så lenge
 - [ ] Skriv nye tekster basert på det Arild sendte
-- [ ] Skriv inn alle LinkedIn artiklene fra tidligere sesonger
+- [X] Skriv inn alle LinkedIn artiklene fra tidligere sesonger
+- [X] Under de enkeltene prosjektene hadde det vært fint med lenker til relaterte artikler
