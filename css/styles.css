@@ -5,7 +5,6 @@
   /* Certisign Color Palette (inactive, kept for fallback)
   --primary-color: #553DF2;
   --primary-dark: #2B2073;
-  --primary-light: #7775BF;
   --accent-color: #0D05F2;
   --text-color: #1f2937;
   --bg-color: #ffffff;
@@ -16,38 +15,18 @@
   --gray-900: #111827;
   */
 
-  /* GuardCenter Light Palette (default) */
+  /* GuardCenter Dark Palette (forced default) */
   --primary-color: #F27405;      /* Orange for CTA buttons/links */
-  --primary-dark: #b35400;       /* Darker orange for hovers/gradients */
-  --primary-light: #F227AB;      /* Pink highlight for gradients */
-  --accent-color: #0424D9;       /* Blue accent for links/focus */
-  --text-color: #0D0D0D;         /* Body text on light backgrounds */
-  --bg-color: #F2F2F2;           /* Page background */
-  --gray-50: #ffffff;            /* Lightest surfaces */
-  --gray-100: #ededed;           /* Card surfaces and subtle fills */
-  --gray-200: #d9d9d9;           /* Borders/dividers and secondary fills */
-  --gray-400: #b3b3b3;           /* Mid-tone dividers and icons */
-  --gray-800: #2f2f2f;           /* Muted text and icons (still AA on light surfaces) */
-  --gray-900: #0D0D0D;           /* High-contrast text/icons on light */
-}
-
-/* Respect system dark mode preference */
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* GuardCenter Dark Palette */
-    --primary-color: #F27405;      /* Orange for CTA buttons/links */
-    --primary-dark: #0D0D0D;       /* Base background and header/footer */
-    --primary-light: #F227AB;      /* Pink highlight for hovers/gradients */
-    --accent-color: #4652ff;       /* Accent elements and focus states */
-    --text-color: #F2F2F2;         /* Body text on dark backgrounds */
-    --bg-color: #0D0D0D;           /* Page background */
-    --gray-50: #121212;            /* Section/card backgrounds */
-    --gray-100: #1f1f1f;           /* Card surfaces and subtle fills */
-    --gray-200: #262626;           /* Borders/dividers and secondary fills */
-    --gray-400: #3a3a3a;           /* Mid-tone dividers and icons */
-    --gray-800: #c7c7c7;           /* Muted text and icons */
-    --gray-900: #f2f2f2;           /* High-contrast text/icons on dark */
-  }
+  --primary-dark: #0D0D0D;       /* Base background and header/footer */
+  --accent-color: #4652ff;       /* Accent elements and focus states */
+  --text-color: #F2F2F2;         /* Body text on dark backgrounds */
+  --bg-color: #0D0D0D;           /* Page background */
+  --gray-50: #121212;            /* Section/card backgrounds */
+  --gray-100: #1f1f1f;           /* Card surfaces and subtle fills */
+  --gray-200: #262626;           /* Borders/dividers and secondary fills */
+  --gray-400: #3a3a3a;           /* Mid-tone dividers and icons */
+  --gray-800: #c7c7c7;           /* Muted text and icons */
+  --gray-900: #f2f2f2;           /* High-contrast text/icons on dark */
 }
 
 * {
@@ -144,7 +123,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+  background: linear-gradient(to right, var(--primary-color), var(--primary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

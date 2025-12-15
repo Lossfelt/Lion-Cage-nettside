@@ -165,7 +165,7 @@ function showNotification(message, type = 'info', duration = 3000) {
     bottom: 2rem;
     right: 2rem;
     padding: 1rem 1.5rem;
-    background: ${type === 'success' ? 'var(--primary-color)' : type === 'error' ? 'var(--primary-light)' : 'var(--accent-color)'};
+    background: ${type === 'success' ? 'var(--primary-color)' : type === 'error' ? 'var(--primary-color)' : 'var(--accent-color)'};
     color: var(--text-color);
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

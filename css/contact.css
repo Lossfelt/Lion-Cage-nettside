@@ -76,16 +76,16 @@
 
 .error-message {
   background-color: var(--gray-100);
-  border: 2px solid var(--primary-light);
+  border: 2px solid var(--primary-color);
 }
 
 .error-message h3 {
-  color: var(--primary-light);
+  color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
 .error-message p {
-  color: var(--primary-light);
+  color: var(--primary-color);
   margin: 0;
 }
 
