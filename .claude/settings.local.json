@@ -3,7 +3,8 @@
     "allow": [
       "Bash(fi)",
       "Bash(done)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []

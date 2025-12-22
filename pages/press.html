@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Les våre artikler og publikasjoner">
-  <title>Artikler - Lion Cage</title>
+  <meta name="description" content="Presseomtale hvor Lion Cage Project nevnes">
+  <title>Presseomtale - Lion Cage</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/images/lion-cage-logo-no-background.png">
@@ -17,7 +17,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/nav-footer.css">
-  <link rel="stylesheet" href="/css/articles.css">
+  <link rel="stylesheet" href="/css/press.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -27,46 +27,16 @@
     <!-- Page Header -->
     <section class="page-header">
       <div class="container">
-        <h1 data-i18n="articles.page_title">Artikler</h1>
-        <p>Våre publikasjoner og fagartikler</p>
+        <h1 data-i18n="articles.page_title">Presseomtale</h1>
+        <p data-i18n="articles.subtitle">Nyhetssaker hvor Lion Cage Project nevnes eller er involvert</p>
       </div>
     </section>
 
-    <!-- Search and Filter -->
-    <section class="section-padding">
-      <div class="container">
-        <div class="articles-controls">
-          <input
-            type="text"
-            id="article-search"
-            class="search-input"
-            placeholder="Søk etter artikler..."
-            data-i18n-placeholder="articles.search_placeholder"
-          >
-          <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all" data-i18n="articles.filter_all">Alle</button>
-            <button class="filter-btn" data-filter="security" data-i18n="articles.filter_security">Sikkerhet</button>
-            <button class="filter-btn" data-filter="transport" data-i18n="articles.filter_transport">Transport</button>
-            <button class="filter-btn" data-filter="privacy" data-i18n="articles.filter_privacy">Privacy</button>
-          </div>
-        </div>
-
-        <!-- Articles Grid -->
-        <div class="articles-grid" id="articles-grid">
-          <!-- Articles will be loaded dynamically -->
-        </div>
-
-        <!-- No results message -->
-        <div id="no-results" class="no-results" style="display: none;">
-          <p>Ingen artikler funnet</p>
-        </div>
-      </div>
-    </section>
+   
 
     <!-- Press Coverage -->
     <section class="section-padding">
       <div class="container">
-        <h2 class="section-title" data-i18n="articles.press_title">Presseomtale</h2>
         <div class="articles-grid">
           <article class="article-card card">
             <div class="article-meta">
@@ -128,19 +98,14 @@
   <!-- Page translations (English only - Norwegian is in HTML) -->
   <script>
     window.pageTranslations = {
-      "articles.page_title": "Articles",
-      "articles.search_placeholder": "Search for articles...",
-      "articles.filter_all": "All",
-      "articles.filter_security": "Security",
-      "articles.filter_transport": "Transportation",
-      "articles.filter_privacy": "Privacy",
-      "articles.press_title": "Press coverage"
+      "articles.page_title": "Press Coverage",
+      "articles.subtitle": "News stories where Lion Cage Project is mentioned or involved"
     };
   </script>
 
   <!-- Scripts -->
   <script src="/js/components.js"></script>
   <script src="/js/i18n.js"></script>
-  <script src="/js/articles.js"></script>
+  <script src="/js/press.js"></script>
 </body>
 </html>

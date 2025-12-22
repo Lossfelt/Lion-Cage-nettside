@@ -3,7 +3,7 @@
     "nav": {
       "home": "Hjem",
       "about": "Om Oss",
-      "articles": "Artikler",
+      "articles": "Presseomtale",
       "projects": "Prosjekter",
       "services": "Tjenester",
       "contact": "Kontakt",
@@ -11,7 +11,7 @@
       "partners": "Samarbeidspartnere"
     },
     "home": {
-      "hero_subtitle": "Sikkerhet gjennom innsyn"
+      "hero_subtitle": "Åpenhet, sikkerhetsrisiko, og informerte beslutninger"
     },
     "footer": {
       "copyright": "© 2025 Lion Cage. Alle rettigheter reservert.",
@@ -22,7 +22,7 @@
     "nav": {
       "home": "Home",
       "about": "About Us",
-      "articles": "Articles",
+      "articles": "Press Coverage",
       "projects": "Projects",
       "services": "Services",
       "contact": "Contact",
@@ -30,7 +30,7 @@
       "partners": "Partners"
     },
     "home": {
-      "hero_subtitle": "Security through transparency"
+      "hero_subtitle": "Openess, security risks, and informed decisions"
     },
     "footer": {
       "copyright": "© 2025 The Lion Cage Project. All rights reserved.",

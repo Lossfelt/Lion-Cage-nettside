@@ -134,7 +134,7 @@ function displayError(message) {
     <div class="error-message">
       <h2>Feil</h2>
       <p>${message}</p>
-      <a href="/pages/articles.html" class="btn btn-primary">Tilbake til artikler</a>
+      <a href="/pages/press.html" class="btn btn-primary">Tilbake til presseomtale</a>
     </div>
   `;
 }

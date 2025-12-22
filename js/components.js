@@ -27,7 +27,7 @@ function createNavigation() {
         <ul class="nav-links">
           <li><a href="/index.html" data-i18n="nav.home">Hjem</a></li>
           <li><a href="/pages/about.html" data-i18n="nav.about">Om Oss</a></li>
-          <li><a href="/pages/articles.html" data-i18n="nav.articles">Artikler</a></li>
+          <li><a href="/pages/press.html" data-i18n="nav.articles">Presseomtale</a></li>
           <li><a href="/pages/projects.html" data-i18n="nav.projects">Prosjekter</a></li>
           <li><a href="/pages/services.html" data-i18n="nav.services">Tjenester</a></li>
           <li><a href="/pages/faq.html" data-i18n="nav.faq">FAQ</a></li>
@@ -55,18 +55,17 @@ function createFooter() {
         </div>
 
         <div class="footer-section">
-          <h4 data-i18n="nav.home">Hjem</h4>
           <ul class="footer-links">
+            <li><a href="/index.html" data-i18n="nav.home">Hjem</a></li>
             <li><a href="/pages/about.html" data-i18n="nav.about">Om Oss</a></li>
             <li><a href="/pages/projects.html" data-i18n="nav.projects">Prosjekter</a></li>
-            <li><a href="/pages/articles.html" data-i18n="nav.articles">Artikler</a></li>
+            <li><a href="/pages/press.html" data-i18n="nav.articles">Presseomtale</a></li>
           </ul>
         </div>
 
         <div class="footer-section">
-          <h4 data-i18n="nav.services">Tjenester</h4>
           <ul class="footer-links">
-            <li><a href="/pages/services.html" data-i18n="nav.services">Våre Tjenester</a></li>
+            <li><a href="/pages/services.html" data-i18n="nav.services">Tjenester</a></li>
             <li><a href="/pages/faq.html" data-i18n="nav.faq">FAQ</a></li>
             <li><a href="/pages/contact.html" data-i18n="nav.contact">Kontakt</a></li>
           </ul>
