@@ -97,7 +97,7 @@
 
 .language-toggle {
   padding: 0.5rem 1rem;
-  background: var(--gray-400);
+  background: var(--gray-200);
   color: var(--text-color);
   border: none;
   border-radius: 0.25rem;

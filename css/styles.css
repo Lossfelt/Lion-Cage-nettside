@@ -24,7 +24,6 @@
   --gray-50: #121212;            /* Section/card backgrounds */
   --gray-100: #1f1f1f;           /* Card surfaces and subtle fills */
   --gray-200: #262626;           /* Borders/dividers and secondary fills */
-  --gray-400: #3a3a3a;           /* Mid-tone dividers and icons */
   --gray-800: #c7c7c7;           /* Muted text and icons */
   --gray-900: #f2f2f2;           /* High-contrast text/icons on dark */
 }
