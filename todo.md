@@ -9,8 +9,8 @@
 - [X] Skriv inn alle LinkedIn artiklene fra tidligere sesonger
 - [X] Under de enkeltene prosjektene hadde det vært fint med lenker til relaterte artikler
 - [X] Endre Artikler til Presseomtale og fjern placeholdere
+- [X] Fjern light mode, kun svart og oransj på siden, rydd generelt opp i fargene
 - [ ] Hør hvem som vil ha navnet sitt på siden
 - [ ] Lag en redirect med egen mailadresse basert på projectlioncage.com?
 - [ ] Skriv nye tekster basert på det Arild sendte
 - [ ] Sett opp form-backend
-- [ ] Fjern light mode, kun svart og oransj på siden, rydd generelt opp i fargene

@@ -18,14 +18,12 @@
   /* GuardCenter Dark Palette (forced default) */
   --primary-color: #F27405;      /* Orange for CTA buttons/links */
   --primary-dark: #0D0D0D;       /* Base background and header/footer */
-  --accent-color: #4652ff;       /* Accent elements and focus states */
   --text-color: #F2F2F2;         /* Body text on dark backgrounds */
   --bg-color: #0D0D0D;           /* Page background */
   --gray-50: #121212;            /* Section/card backgrounds */
   --gray-100: #1f1f1f;           /* Card surfaces and subtle fills */
   --gray-200: #262626;           /* Borders/dividers and secondary fills */
   --gray-800: #c7c7c7;           /* Muted text and icons */
-  --gray-900: #f2f2f2;           /* High-contrast text/icons on dark */
 }
 
 * {
@@ -75,7 +73,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--gray-100);
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -86,7 +84,7 @@ body {
 }
 
 .btn-secondary:hover {
-  background-color: var(--gray-100);
+  background-color: var(--primary-dark);
 }
 
 /* Card styles */
