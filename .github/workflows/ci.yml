@@ -1,0 +1,54 @@
+# Sjekker nettsiden på hver pull request og push til main.
+# Siden er statisk HTML/CSS/JS uten byggesteg (Netlify publiserer repoet som det er),
+# så CI sjekker det som faktisk kan gå i stykker:
+#   - at avhengighetene installeres rent fra package-lock.json
+#   - at lokale lenker og ressurser i HTML-filene finnes (npm test)
+#   - at JavaScript-filene har gyldig syntaks
+#   - at oversettelsesfilen er gyldig JSON
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  sjekk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Lenker og ressurser i HTML
+        run: npm test
+      - name: Syntaks i JavaScript
+        run: for f in js/*.js; do node --check "$f"; done
+      - name: Gyldig JSON i oversettelsene
+        run: node -e 'JSON.parse(require("fs").readFileSync("content/translations.json", "utf8"))'
+
+  # Fletter Dependabot-PR-er automatisk når CI er grønn, men bare minor- og
+  # patch-oppdateringer. Major-hopp blir liggende for manuell testing.
+  # Flettes direkte i stedet for med "gh pr merge --auto", slik at det ikke
+  # krever branch protection eller "Allow auto-merge" i repoet.
+  # Netlify publiserer selv fra main, så en automatisk fletting blir også publisert.
+  dependabot-fletting:
+    needs: sjekk
+    if: github.event_name == 'pull_request' && github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - id: metadata
+        uses: dependabot/fetch-metadata@v3
+      - if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge "$PR_URL" --squash --delete-branch
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
